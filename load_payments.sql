@@ -1,4 +1,4 @@
-\copy payments (amount, payment_date, purpose) FROM './payments.csv' DELIMITER ',' CSV HEADER;
+\copy payments (amount, payment_date, purpose) FROM 'payments.csv' DELIMITER ',' CSV HEADER;
 
 UPDATE payments
 SET request_id = subquery.request_id
